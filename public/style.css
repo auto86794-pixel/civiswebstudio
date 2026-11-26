@@ -63,3 +63,18 @@ h1{font-size:clamp(2rem,3.05vw,3.45rem);line-height:1.1;letter-spacing:-.05em;fo
 .copy-button{border:1px solid var(--green);border-radius:.5rem;background:transparent;color:var(--green);padding:.55rem .9rem}
 #projekt-piszkozat{border-top:1px solid var(--line);margin-top:1rem;padding-top:1rem}
 @media(max-width:760px){.contact,.form-row{grid-template-columns:1fr}.form-row{gap:0}}
+
+.action-row{display:flex;flex-wrap:wrap;align-items:center;gap:.75rem;margin-top:1.3rem}
+.action-row .button{margin-top:0}
+.button-outline{background:transparent;color:var(--green);box-shadow:inset 0 0 0 1px currentColor}
+.button-outline:hover{background:#eaf0e7}
+.projects{grid-template-columns:repeat(2,minmax(0,1fr))}
+.scan-case{margin-top:clamp(2rem,5vw,4rem);scroll-margin-top:1rem;border-radius:1rem;background:#eeeee3;padding:clamp(1rem,4vw,2.5rem)}
+.scan-case > p{max-width:64ch;margin-top:.5rem}
+.scan-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin:1rem 0}
+.scan-screen{min-width:0;border:1px solid #d0c6a8;border-radius:1rem;background:#fcfaf4;overflow:hidden}
+.scan-screen h3{padding:.85rem 1rem;background:#25231e;color:#f7e8bd;font-size:1rem}
+.scan-screen dl{display:grid;gap:.25rem;padding:1rem;margin:0}
+.scan-screen dt{font-size:.875rem;color:#575345}
+.scan-screen dd{margin:0 0 .4rem;font-weight:650}
+@media(max-width:700px){.projects,.scan-steps{grid-template-columns:1fr}}
