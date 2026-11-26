@@ -6,7 +6,7 @@ a{color:var(--green);text-underline-offset:.22em}
 a:focus-visible{outline:3px solid #427753;outline-offset:5px}
 .top{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1rem 0}
 .brand{display:flex;align-items:center;gap:.6rem;font-size:clamp(1.1rem,2.5vw,2rem);font-weight:850;color:var(--text);text-decoration:none;letter-spacing:-.04em}
-.brand span{width:1.45em;height:.75em;border:.23em solid var(--green);border-bottom:0;border-radius:2em 2em 0 0}
+.brand-logo{display:block;width:clamp(2.5rem,5vw,3rem);height:auto;aspect-ratio:1;object-fit:contain;flex:none}
 nav{display:flex;gap:clamp(.8rem,3vw,2.5rem)}
 nav a{font-weight:650;color:var(--text);text-decoration:none}
 nav a:hover{text-decoration:underline}
