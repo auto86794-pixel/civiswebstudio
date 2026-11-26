@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Céges weboldal és egyedi webapp készítés | Cívis Webstúdió</title>
+<meta name="description" content="Bemutatkozó weboldalak és egyedi webalkalmazások vállalkozásoknak, az ajánlatkéréstől a helyszíni felmérésig. Ismerd meg a Cívis Webstúdió munkáit.">
+<meta property="og:title" content="Cívis Webstúdió | Céges weboldalak és egyedi webappok">
+<meta property="og:description" content="Ismerd meg a Cívis Webstúdió munkáit és szolgáltatásait.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="wrap top">
+<a class="brand" href="./"><span aria-hidden="true"></span>Cívis Webstúdió</a>
+<nav aria-label="Fő navigáció"><a href="#munkaim">Munkáim</a><a href="#szolgaltatasok">Szolgáltatások</a><a href="#kapcsolat">Kapcsolat</a></nav>
+</header>
+<main>
+<section class="wrap hero">
+<div class="hero-copy">
+<h1>Mutasd be vállalkozásod.<br>Egyedi webapp, ami megkönnyíti a munkád.</h1>
+<p>Bemutatkozó weboldalak és egyedi webalkalmazások vállalkozásoknak, az ajánlatkéréstől a helyszíni felmérésig.</p>
+<a class="button" href="#munkaim">Munkáim megtekintése</a>
+</div>
+<img class="city" src="assets/hero.webp" alt="">
+</section>
+<section class="wrap" id="munkaim" aria-label="Referenciák">
+<div class="grid">
+<a class="card featured" href="#gabevill"><img src="assets/gabevill.webp" alt=""><strong>Gabevill</strong></a>
+<a class="card" href="#prestige"><img src="assets/prestige.webp" alt=""><strong>Prestige House</strong></a>
+<a class="card" href="#scan"><img src="assets/scan.webp" alt=""><strong>IngatlanScan</strong></a>
+</div>
+<p class="caption">A projektkártyák képei látványillusztrációk.</p>
+<div class="projects">
+<article id="gabevill"><h2>Gabevill</h2><p>A napelemes cég szolgáltatásait és projektjeit egy helyen mutatja be. A látogatók a szolgáltatások mellett olyan korábbi kivitelezéseket is megismerhetnek, mint a Puskás Aréna és a Gulyás Tüzép.</p><a href="https://gabevillkft.hu/">Élő weboldal</a></article>
+<article id="prestige"><h2>Prestige House</h2><p>Ingatlanbemutató a lakások adatainak és képeinek áttekintéséhez. Az érdeklődő a projekt oldaláról tud kapcsolatot kezdeményezni.</p><a href="https://prestigehouse.hu/">Élő weboldal</a></article>
+<article id="scan"><h2>IngatlanScan</h2><p>Mobilos alkalmazás helyszíni ingatlanfelméréshez. Az alapadatok, a helyiségek és a fotók lépésenként rögzíthetők, a felmérés végén pedig egy helyen áttekinthetők.</p><a href="https://ingatlanscan.hu/">Alkalmazás oldala</a></article>
+</div>
+</section>
+<section class="wrap services" aria-labelledby="szolgaltatasok">
+<h2 id="szolgaltatasok">Miben tudok segíteni?</h2>
+<div class="services-grid">
+<article><h3>Bemutatkozó weboldal</h3><p>Mobilbarát oldal, ahol az érdeklődő megismerheti a szolgáltatásaidat, megnézheti a korábbi munkáidat, és könnyen ajánlatot kérhet.</p></article>
+<article><h3>Egyedi webapp</h3><p>Telefonon is használható alkalmazás egy konkrét feladatra, például helyszíni adatfelvételre vagy fotók rendszerezésére.</p></article>
+</div>
+</section>
+<section class="wrap services" aria-labelledby="folyamat">
+<h2 id="folyamat">Hogyan készül el?</h2>
+<ol class="process">
+<li><h3>Egyeztetjük a célt</h3><p>Átbeszéljük, kinek készül az oldal, vagy melyik munkafolyamatot szeretnéd egyszerűbbé tenni.</p></li>
+<li><h3>Megnézed a tervet</h3><p>Az első látványterven közösen pontosítjuk az elrendezést és a szövegeket.</p></li>
+<li><h3>Kipróbálod az oldalt</h3><p>Az átadás előtt ellenőrizzük a mobilos megjelenést és a megbeszélt funkciókat.</p></li>
+</ol>
+</section>
+<section class="wrap contact" id="kapcsolat" aria-labelledby="kapcsolat-cim">
+<div>
+<h2 id="kapcsolat-cim">Beszéljünk a projektedről</h2>
+<p>Írd le röviden, milyen weboldalt szeretnél, vagy melyik napi feladatot egyszerűsítenéd egy webappal.</p>
+</div>
+<form class="project-form" id="projekt-urlap" method="post" action="https://formsubmit.co/infociviswebstudio@gmail.com">
+<input type="hidden" name="_subject" value="Új ajánlatkérés – Cívis Webstúdió">
+<div class="form-row">
+<label>Név<input name="name" autocomplete="name" maxlength="100" required></label>
+<label>E-mail-cím<input name="email" type="email" autocomplete="email" maxlength="254" required></label>
+</div>
+<label>Miben segíthetek?
+<select name="service" required>
+<option value="" selected disabled>Válassz szolgáltatást</option>
+<option>Új céges weboldal</option>
+<option>Meglévő weboldal megújítása</option>
+<option>Egyedi webapp</option>
+<option>Még nem tudom</option>
+</select>
+</label>
+<label>Mesélj a projektről<textarea name="message" rows="4" maxlength="3000" required></textarea></label>
+<button class="button" type="submit" aria-describedby="projekt-tajekoztato">Ajánlatkérés elküldése</button>
+<p class="caption" id="projekt-tajekoztato">A megadott adatokat a FormSubmit továbbítja a Cívis Webstúdiónak, hogy válaszolhassunk az ajánlatkérésedre.</p>
+</form>
+</section>
+</main>
+<footer class="wrap footer">Cívis Webstúdió</footer>
+<script src="/contact.js" defer></script>
+</body>
+</html>
